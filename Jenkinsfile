@@ -1,8 +1,9 @@
-cat > Jenkinsfile <<'EOF'
+
 pipeline {
     agent any
 
     stages {
+
         stage('Checkout') {
             steps {
                 echo 'Checking out source code'
@@ -34,4 +35,3 @@ pipeline {
         }
     }
 }
-EOF
